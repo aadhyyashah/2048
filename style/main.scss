@@ -9,15 +9,15 @@ $tile-border-radius: 3px;
 
 $mobile-threshold: $field-width + 20px;
 
-$text-color: #776E65;
+$text-color: #5a2a1a;
 $bright-text-color: #f9f6f2;
 
-$tile-color: #eee4da;
-$tile-gold-color: #edc22e;
+$tile-color: #fde7c3;
+$tile-gold-color: #be185d;
 $tile-gold-glow-color: lighten($tile-gold-color, 15%);
 
 $game-container-margin-top: 40px;
-$game-container-background: #bbada0;
+$game-container-background: #7a2e1f;
 
 $transition-speed: 100ms;
 
@@ -25,7 +25,7 @@ html, body {
   margin: 0;
   padding: 0;
 
-  background: #faf8ef;
+  background: #fff7e6;
   color: $text-color;
   font-family: "Clear Sans", "Helvetica Neue", Arial, sans-serif;
   font-size: 18px;
@@ -547,3 +547,10 @@ hr {
     }
   }
 }
+
+/* Masala Merge: mobile + branding tweaks */
+html, body { overscroll-behavior: none; -webkit-tap-highlight-color: transparent; }
+.game-container { touch-action: none; }
+h1.title { font-size: 46px; line-height: 1.05; }
+@media screen and (max-width: 520px) { h1.title { font-size: 26px; } }
+.credits { font-size: 13px; }
